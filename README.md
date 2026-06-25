@@ -1,180 +1,192 @@
-# 🔵 Splunk Security Investigations
+# Splunk SOC Investigation Lab
 
-A collection of hands-on SOC analyst investigations performed using Splunk. These investigations focus on authentication monitoring, suspicious IP analysis, security incident investigation, brute-force detection, privilege escalation analysis, and Windows event correlation.
+![Splunk](https://img.shields.io/badge/SIEM-Splunk-green)
+![SOC](https://img.shields.io/badge/Role-SOC%20Analyst-blue)
+![Windows](https://img.shields.io/badge/Platform-Windows%20Security-orange)
+![MITRE ATT\&CK](https://img.shields.io/badge/MITRE-ATT%26CK-red)
+![Status](https://img.shields.io/badge/Investigations-7%20Completed-success)
 
----
+## Overview
 
-# 🎯 Objective
+This repository documents my hands-on **Splunk Security Operations Center (SOC)** investigations. Each investigation simulates real-world security incidents using Windows Security Event Logs, authentication events, brute-force attacks, privilege escalation, lateral movement, and persistence techniques.
 
-The goal of this repository is to demonstrate practical SOC analyst skills through real-world investigation scenarios using Splunk.
-
-Skills practiced include:
-
-* Log Analysis
-* Security Monitoring
-* Authentication Analysis
-* Brute Force Detection
-* Privilege Escalation Investigation
-* Windows Event Analysis
-* Incident Documentation
-* Security Event Correlation
-* Threat Detection
+The primary goal of this repository is to strengthen my practical SIEM skills, improve log analysis capabilities, and build experience in identifying Indicators of Compromise (IOCs) using Splunk SPL.
 
 ---
 
-# 🛠️ Tools Used
+# Skills Demonstrated
 
-* Splunk Enterprise
-* CSV Security Datasets
-* Windows Authentication Logs
-* Security Event Logs
-* Threat Investigation Methodologies
-
----
-
-# 📂 Investigations
-
-## Investigation 01 – Authentication Log Analysis
-
-### Focus Areas
-
-* Failed Login Analysis
-* Successful Login Analysis
-* User Activity Monitoring
-* Source IP Analysis
-
-### Skills Demonstrated
-
+* Splunk SPL Queries
+* Windows Event Log Analysis
 * Authentication Monitoring
-* Event Correlation
-* Security Investigation
-
----
-
-## Investigation 02 – Suspicious IP & Country Analysis
-
-### Focus Areas
-
-* Source IP Investigation
-* Country-Based Threat Analysis
-* Blocked vs Allowed Traffic
-* User Activity Review
-
-### Skills Demonstrated
-
-* Threat Hunting
-* IP Analysis
-* Security Monitoring
-
----
-
-## Investigation 03 – Security Alert Investigation
-
-### Focus Areas
-
-* Alert Analysis
-* Event Prioritization
-* Severity Classification
-* Incident Validation
-
-### Skills Demonstrated
-
-* Alert Triage
-* Security Operations
-* Incident Analysis
-
----
-
-## Investigation 04 – Security Incident Analysis
-
-### Focus Areas
-
-* Failed Authentication Events
-* Successful Logins
-* Suspicious Source IPs
+* Brute Force Detection
 * Privilege Escalation Detection
-
-### Skills Demonstrated
-
-* Authentication Monitoring
-* Security Event Correlation
+* Lateral Movement Investigation
+* Persistence Detection
+* PowerShell Threat Hunting
+* Process Creation Analysis
 * Incident Investigation
-* Risk Assessment
+* IOC Identification
+* Attack Timeline Reconstruction
+* SOC Incident Reporting
+* MITRE ATT&CK Mapping
 
 ---
 
-## Investigation 05 – Brute Force Attack & Privilege Escalation Analysis
+# Investigation List
 
-### Focus Areas
-
-* Failed Login Detection
-* Brute Force Identification
-* Successful Login Correlation
-* Privilege Escalation Analysis
-* Critical Event Investigation
-
-### Skills Demonstrated
-
-* Brute Force Detection
-* Authentication Analysis
-* Privilege Escalation Investigation
-* SOC Incident Response
+| Investigation   | Topic                                    | Status      |
+| --------------- | ---------------------------------------- | ----------- |
+| Investigation 1 | Authentication Log Analysis              | ✅ Completed |
+| Investigation 2 | Security Incident Investigation          | ✅ Completed |
+| Investigation 3 | SOC Alert Investigation                  | ✅ Completed |
+| Investigation 4 | Windows Authentication Analysis          | ✅ Completed |
+| Investigation 5 | Brute Force Attack Detection             | ✅ Completed |
+| Investigation 6 | Windows Event Log & Privilege Escalation | ✅ Completed |
+| Investigation 7 | Lateral Movement & Persistence Detection | ✅ Completed |
 
 ---
 
-## Investigation 06 – Windows Event ID Analysis
+# Investigation Workflow
 
-### Event IDs Covered
+Each investigation follows a structured SOC workflow:
 
-* 4624 – Successful Login
-* 4625 – Failed Login
-* 4672 – Special Privileges Assigned
-* 4688 – Process Creation
+1. Import logs into Splunk
+2. Analyze Windows Event IDs
+3. Execute SPL queries
+4. Identify suspicious users and processes
+5. Detect attacker techniques
+6. Build attack timeline
+7. Map techniques to MITRE ATT&CK
+8. Produce SOC investigation report
 
-### Planned Skills
+---
 
-* Windows Security Monitoring
-* Event Correlation
-* Process Analysis
-* Threat Detection
+# Windows Event IDs Covered
+
+| Event ID | Description                 |
+| -------- | --------------------------- |
+| 4624     | Successful Logon            |
+| 4625     | Failed Logon                |
+| 4672     | Special Privileges Assigned |
+| 4688     | Process Creation            |
+
+---
+
+# Suspicious Tools & Processes Investigated
+
+* PowerShell
+* Cmd
+* PsExec
+* WMIC
+* Certutil
+* Net.exe
+* Schtasks
+* BITSAdmin
+* Tasklist
+* Whoami
+* Netstat
+* NSLookup
+* Ping
+* Reg Query
+* IPConfig
+
+---
+
+# MITRE ATT&CK Techniques
+
+| Technique                          | ID        |
+| ---------------------------------- | --------- |
+| PowerShell                         | T1059.001 |
+| Create Account                     | T1136     |
+| Account Manipulation               | T1098     |
+| Windows Management Instrumentation | T1047     |
+| SMB / PsExec                       | T1021.002 |
+| Scheduled Task                     | T1053.005 |
+| BITS Jobs                          | T1197     |
+| Ingress Tool Transfer              | T1105     |
+| System Discovery                   | T1082     |
+| Network Discovery                  | T1046     |
+
+---
+
+# Repository Structure
+
+```text
+Splunk-SOC-Investigations/
+│
+├── Investigation-1/
+├── Investigation-2/
+├── Investigation-3/
+├── Investigation-4/
+├── Investigation-5/
+├── Investigation-6/
+├── Investigation-7/
+└── README.md
+```
+
+Each investigation contains:
+
+* Dataset (CSV)
+* README.md
+* Splunk SPL Queries
+* Investigation Findings
+* Attack Analysis
+* SOC Conclusion
+
+---
+
+# Key Learning Outcomes
+
+Through these investigations I gained practical experience in:
+
+* Writing effective Splunk SPL queries
+* Investigating Windows Security Events
+* Detecting brute-force attacks
+* Identifying privilege escalation
+* Detecting malicious PowerShell activity
+* Investigating lateral movement using PsExec and WMIC
+* Detecting persistence using Scheduled Tasks and BITSAdmin
+* Building attack timelines
+* Writing SOC incident reports
+* Mapping attacker behavior to the MITRE ATT&CK framework
+
+---
+
+# Future Investigations
+
+Planned investigations include:
+
+* Active Directory Attack Detection
+* Ransomware Investigation
+* DNS Tunneling Detection
+* Data Exfiltration Investigation
+* Insider Threat Analysis
+* Credential Dumping Detection
+* Kerberoasting Detection
+* Pass-the-Hash Detection
+* Web Attack Investigation
+* Malware & Command-and-Control Detection
+
+---
+
+# About Me
+
+I am an aspiring **SOC Analyst** with hands-on experience in:
+
+* Splunk SIEM
+* Threat Hunting
+* Windows Event Analysis
 * Incident Investigation
+* Cybersecurity Lab Projects
+
+This repository is part of my cybersecurity learning journey and demonstrates practical SOC investigation skills through real-world attack simulations.
 
 ---
 
-# 📈 Learning Outcomes
+## Connect With Me
 
-Through these investigations, I have gained practical experience in:
+* **LinkedIn:** *(https://www.linkedin.com/in/hansal-savaliya/)*
+* **GitHub:** *(https://github.com/hansalsavaliya200-alt)*
 
-* Security Event Analysis
-* Splunk Query Development
-* Threat Detection Techniques
-* Authentication Monitoring
-* Windows Log Analysis
-* Incident Documentation
-* SOC Investigation Methodology
-
----
-
-# 🚀 Future Investigations
-
-Planned topics include:
-
-* Windows Event Correlation
-* Malware Activity Analysis
-* PowerShell Abuse Detection
-* Lateral Movement Detection
-* RDP Investigation
-* Threat Hunting Scenarios
-* SIEM Alert Tuning
-
----
-
-# 👨‍💻 Author
-
-**Hansal Savaliya**
-
-Cybersecurity Enthusiast | SOC Analyst Aspirant | Splunk Learner
-
----
-
-⭐ This repository documents my SOC analyst learning journey through practical investigations and hands-on Splunk analysis.
+If you find this repository helpful, feel free to ⭐ star it.
