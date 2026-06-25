@@ -122,7 +122,7 @@ Skills practiced include:
 
 ---
 
-## Investigation 06 – Windows Event ID Analysis *(In Progress)*
+## Investigation 06 – Windows Event ID Analysis
 
 ### Event IDs Covered
 
