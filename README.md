@@ -210,7 +210,7 @@ This repository documents my practical SOC learning journey through realistic Wi
 
 ## Connect With Me
 
-* **LinkedIn:** *(Add your LinkedIn URL)*
-* **GitHub:** *(Add your GitHub profile URL)*
+* **LinkedIn:** *(https://www.linkedin.com/in/hansal-savaliya/)*
+* **GitHub:** *(https://github.com/hansalsavaliya200-alt)*
 
 If you found this repository helpful, feel free to ⭐ star it.
