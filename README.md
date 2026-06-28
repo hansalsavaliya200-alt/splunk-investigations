@@ -269,9 +269,9 @@ This repository showcases my continuous learning journey through practical SOC i
 
 # 📫 Connect With Me
 
-**GitHub:** https://github.com/YOUR_USERNAME
+**GitHub:** https://github.com/hansalsavaliya200-alt
 
-**LinkedIn:** https://linkedin.com/in/YOUR_PROFILE
+**LinkedIn:** https://www.linkedin.com/in/hansal-savaliya/
 
 *(Replace the links above with your actual GitHub and LinkedIn profiles.)*
 
