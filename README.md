@@ -3,19 +3,19 @@
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-green)
 ![SOC](https://img.shields.io/badge/Blue%20Team-SOC%20Analyst-blue)
 ![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-red)
-![Status](https://img.shields.io/badge/Investigations-12-success)
+![Status](https://img.shields.io/badge/Investigations-13-success)
 
 ## 📌 Overview
 
-This repository contains my hands-on **SOC Analyst investigations** performed using **Splunk SIEM**. Each investigation simulates a realistic cyber attack scenario, following the complete incident response lifecycle from initial detection to attack reconstruction and MITRE ATT&CK mapping.
+This repository showcases my hands-on **SOC Analyst investigations** performed using **Splunk Enterprise**. Each investigation simulates realistic enterprise attack scenarios ranging from Windows endpoint compromise to Active Directory attacks and Cloud Security incidents.
 
-The objective of this portfolio is to strengthen practical SOC skills by analyzing Windows Event Logs, identifying Indicators of Compromise (IOCs), understanding attacker behavior, and documenting professional incident reports.
+The goal of this portfolio is to strengthen practical Blue Team skills by investigating security events, reconstructing attack timelines, identifying Indicators of Compromise (IOCs), and mapping attacker behavior to the **MITRE ATT&CK Framework**.
 
 ---
 
 # 🎯 Skills Demonstrated
 
-- Splunk SIEM
+- Splunk Enterprise
 - Threat Hunting
 - Windows Event Log Analysis
 - Incident Response
@@ -23,11 +23,14 @@ The objective of this portfolio is to strengthen practical SOC skills by analyzi
 - MITRE ATT&CK Framework
 - IOC Identification
 - Malware Investigation
-- Ransomware Analysis
 - Active Directory Investigation
+- Cloud Security Investigation
+- Azure CLI Analysis
+- Azure Storage Investigation
 - Command & Control (C2) Detection
 - Data Exfiltration Analysis
-- Windows Persistence Techniques
+- Windows Persistence
+- Cloud Persistence
 - Anti-Forensics Detection
 
 ---
@@ -41,40 +44,62 @@ The objective of this portfolio is to strengthen practical SOC skills by analyzi
 | Investigation 3 | Privilege Escalation | ⭐⭐ | ✅ Completed |
 | Investigation 4 | PowerShell Suspicious Activity | ⭐⭐ | ✅ Completed |
 | Investigation 5 | Malware Execution | ⭐⭐ | ✅ Completed |
-| Investigation 6 | Windows Event Log Investigation | ⭐⭐⭐ | ✅ Completed |
-| Investigation 7 | Insider Threat Analysis | ⭐⭐⭐ | ✅ Completed |
+| Investigation 6 | Windows Event Investigation | ⭐⭐⭐ | ✅ Completed |
+| Investigation 7 | Insider Threat Investigation | ⭐⭐⭐ | ✅ Completed |
 | Investigation 8 | Credential Access Investigation | ⭐⭐⭐ | ✅ Completed |
 | Investigation 9 | Lateral Movement Investigation | ⭐⭐⭐⭐ | ✅ Completed |
 | Investigation 10 | Ransomware Attack Investigation | ⭐⭐⭐⭐ | ✅ Completed |
 | Investigation 11 | Domain Controller Compromise | ⭐⭐⭐⭐⭐ | ✅ Completed |
-| **Investigation 12** | **Command & Control (C2) Beaconing & Data Exfiltration** | ⭐⭐⭐⭐⭐ | ✅ Completed |
+| Investigation 12 | Command & Control (C2) & Data Exfiltration | ⭐⭐⭐⭐⭐ | ✅ Completed |
+| **Investigation 13** | **Cloud Account Compromise & Cloud Data Exfiltration** | ⭐⭐⭐⭐⭐ | ✅ Completed |
 
 ---
 
-# 📈 Investigation Progress
+# 📈 Portfolio Progress
 
 ```
-████████████░░░░░░░░░░░░░░░░░ 12 / 40 Investigations Completed
+█████████████░░░░░░░░░░░░░░░░░ 13 / 40 Investigations Completed
 ```
 
-🎯 **Goal:** Complete **40 realistic SOC investigations** covering enterprise attack scenarios and detection engineering.
+🎯 **Target:** Complete **40 enterprise-grade SOC investigations** covering Windows, Active Directory, Cloud, Malware, Threat Hunting, Detection Engineering, and Incident Response.
 
 ---
 
-# 🛠️ Tools Used
+# 🛠️ Technologies & Tools
+
+### SIEM
 
 - Splunk Enterprise
-- Windows Event Logs
-- Windows Security Events
-- MITRE ATT&CK Framework
-- CSV Log Analysis
-- Windows Command-Line Utilities
+
+### Operating Systems
+
+- Windows
+- Windows Security Event Logs
+
+### Cloud
+
+- Microsoft Azure
+- Azure CLI
+- Azure Storage
+- Azure Active Directory
+
+### Security Frameworks
+
+- MITRE ATT&CK
+- Cyber Kill Chain
+
+### Investigation
+
+- IOC Analysis
+- Threat Hunting
+- Incident Response
+- Digital Forensics
 
 ---
 
 # 📚 Investigation Workflow
 
-```
+```text
 Log Collection
       │
       ▼
@@ -98,34 +123,60 @@ Incident Report
 
 ---
 
-# 🔥 Attack Scenarios Covered
+# 🚨 Attack Scenarios Covered
 
-- Brute Force Attacks
+## Windows Attacks
+
+- Failed Logons
+- Brute Force
 - Privilege Escalation
-- Malware Execution
 - PowerShell Abuse
-- Windows Reconnaissance
-- Scheduled Task Persistence
-- Registry Run Key Persistence
+- Malware Execution
+- Registry Persistence
+- Scheduled Tasks
+- Ransomware Activity
 - Credential Hunting
-- Command & Control (C2)
 - Data Staging
 - Archive Creation
 - Data Exfiltration
-- Ransomware Activity
-- Domain Controller Compromise
-- Windows Event Log Clearing
 - Anti-Forensics
 
 ---
 
-# 📖 MITRE ATT&CK Techniques Practiced
+## Active Directory
+
+- Domain Controller Compromise
+- Domain Enumeration
+- User Enumeration
+- Privileged Account Abuse
+
+---
+
+## Cloud Security
+
+- Cloud Administrator Compromise
+- Azure CLI Abuse
+- Azure Active Directory Enumeration
+- Azure Storage Enumeration
+- Azure Application Credential Reset
+- Cloud Persistence
+- Global Administrator Abuse
+- Cloud Data Exfiltration
+- Rclone Investigation
+
+---
+
+# 🎯 MITRE ATT&CK Techniques Practiced
 
 - T1033 – System Owner/User Discovery
 - T1082 – System Information Discovery
 - T1016 – System Network Configuration Discovery
 - T1049 – System Network Connections Discovery
 - T1059.001 – PowerShell
+- T1078 – Valid Accounts
+- T1087 – Account Discovery
+- T1069 – Permission Groups Discovery
+- T1098 – Account Manipulation
 - T1105 – Ingress Tool Transfer
 - T1204.002 – User Execution
 - T1547.001 – Registry Run Keys
@@ -134,6 +185,7 @@ Incident Report
 - T1005 – Data from Local System
 - T1074.001 – Local Data Staging
 - T1560.001 – Archive Collected Data
+- T1567 – Exfiltration Over Web Service
 - T1048 – Exfiltration Over Alternative Protocol
 - T1070.004 – File Deletion
 - T1070.001 – Clear Windows Event Logs
@@ -142,46 +194,55 @@ Incident Report
 
 # 🎯 Learning Objectives
 
-This portfolio focuses on developing practical SOC Analyst skills by:
+This repository focuses on developing practical SOC Analyst skills through realistic enterprise investigations.
 
-- Investigating realistic cyber attacks
-- Understanding attacker tactics and techniques
-- Building professional incident reports
-- Mapping attacks to MITRE ATT&CK
-- Improving detection and threat hunting capabilities
-- Strengthening blue team investigation methodology
-
----
-
-# 📌 Current Progress
-
-- ✅ 12 Splunk Investigations Completed
-- ✅ Windows Event Log Analysis
-- ✅ MITRE ATT&CK Mapping
-- ✅ IOC Analysis
-- ✅ Incident Response Documentation
-- ✅ Threat Hunting Practice
-- ✅ SOC Portfolio Development
-
----
-
-## 👨‍💻 Author
-
-**Hansal Savaliya**
-
-Aspiring SOC Analyst | Blue Team Enthusiast | Threat Hunter
-
-**Current Learning Focus**
+Current focus areas include:
 
 - Splunk SIEM
+- Windows Event Analysis
+- Threat Hunting
+- Digital Forensics
+- Incident Response
+- Active Directory Security
+- Cloud Security (Azure)
+- MITRE ATT&CK Mapping
+- IOC Analysis
+- Blue Team Methodology
+
+---
+
+# 📊 Current Portfolio Statistics
+
+| Category | Completed |
+|----------|----------:|
+| Total Investigations | **13** |
+| Windows Investigations | **12** |
+| Cloud Investigations | **1** |
+| MITRE ATT&CK Techniques | **20+** |
+| Attack Timelines Created | **13** |
+| IOC Reports | **13** |
+| Incident Reports | **13** |
+
+---
+
+# 👨‍💻 About Me
+
+## Hansal Savaliya
+
+**Aspiring SOC Analyst | Blue Team | Threat Hunter | Cloud Security Learner**
+
+### Currently Learning
+
+- Splunk Enterprise
 - Wazuh SIEM
+- Microsoft Azure Security
 - Windows Event Logs
 - Threat Hunting
-- MITRE ATT&CK
 - Digital Forensics
 - Detection Engineering
 - Incident Response
+- MITRE ATT&CK Framework
 
 ---
 
-⭐ *This repository documents my continuous journey toward becoming a professional SOC Analyst through hands-on investigations and practical security analysis.*
+⭐ **This repository represents my journey toward becoming a professional SOC Analyst through continuous hands-on investigations, practical security analysis, and real-world attack simulations.**
