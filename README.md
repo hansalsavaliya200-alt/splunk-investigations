@@ -3,58 +3,77 @@
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-green)
 ![SOC](https://img.shields.io/badge/Blue%20Team-SOC%20Analyst-blue)
 ![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-red)
-![Status](https://img.shields.io/badge/Investigations-15-success)
+![Status](https://img.shields.io/badge/Investigations-16-success)
 
 ---
 
 # 📌 Overview
 
-Welcome to my **Splunk SOC Investigation Portfolio**, a collection of realistic Security Operations Center (SOC) investigations performed using **Splunk Enterprise**. Each investigation simulates enterprise attack scenarios and documents the complete incident response process—from initial detection to attacker attribution and MITRE ATT&CK mapping.
+Welcome to my **Splunk SOC Investigation Portfolio**, a collection of enterprise-style Security Operations Center (SOC) investigations built using **Splunk Enterprise**. This repository demonstrates practical Blue Team skills through realistic attack simulations, threat hunting exercises, and incident response investigations covering Windows, Active Directory, Cloud, and Enterprise ransomware scenarios.
 
-This portfolio demonstrates practical experience in:
+Each investigation includes:
 
-- Threat Hunting
-- Windows Security Monitoring
-- Active Directory Security
-- Cloud Security (Azure)
-- Malware Analysis
-- Phishing Investigation
-- Credential Dumping Detection
-- Lateral Movement Analysis
-- Incident Response
-- Digital Forensics
+- Splunk Queries
+- Event Analysis
+- Attack Timeline Reconstruction
+- IOC Identification
 - MITRE ATT&CK Mapping
+- Incident Response
+- Professional Documentation
 
 ---
 
 # 🎯 Skills Demonstrated
 
+## SIEM & Detection
+
 - Splunk Enterprise
 - Threat Hunting
 - SOC Investigation
-- Windows Event Log Analysis
-- Incident Response
-- Digital Forensics
+- Detection Engineering
 - IOC Identification
-- MITRE ATT&CK Framework
-- Malware Investigation
-- Active Directory Investigation
-- Cloud Security Investigation
-- Azure CLI Investigation
-- Azure Storage Investigation
-- Credential Dumping Detection
+
+## Windows Security
+
+- Windows Event Log Analysis
+- Process Creation Analysis
+- PowerShell Investigation
+- Registry Persistence
+- Scheduled Tasks
+- Windows Services
+- Event Log Analysis
+
+## Active Directory
+
+- Domain Enumeration
+- Domain Controller Discovery
+- Domain Admin Investigation
+- Credential Theft
 - LSASS Memory Analysis
-- PsExec Lateral Movement Detection
-- Phishing Investigation
-- Command & Control Detection
-- Data Exfiltration Investigation
-- Windows Persistence
+- PsExec Detection
+- SMB Investigation
+
+## Cloud Security
+
+- Azure CLI Investigation
+- Azure Storage Enumeration
 - Cloud Persistence
+- Cloud Data Exfiltration
+
+## Threat Analysis
+
+- Malware Investigation
+- Phishing Investigation
+- Ransomware Analysis
+- Command & Control Detection
+- Lateral Movement
+- Data Exfiltration
+- Enterprise Incident Response
 - Anti-Forensics Investigation
 
 ---
 
-# 📂 Investigations
+# 📂 Investigation Portfolio
 
 | Investigation | Scenario | Difficulty | Status |
 |---------------|----------|------------|--------|
@@ -72,17 +91,21 @@ This portfolio demonstrates practical experience in:
 | Investigation 12 | Command & Control (C2) & Data Exfiltration | ⭐⭐⭐⭐⭐ | ✅ |
 | Investigation 13 | Cloud Account Compromise & Cloud Data Exfiltration | ⭐⭐⭐⭐⭐ | ✅ |
 | Investigation 14 | Phishing Email Malware Delivery & HR Data Exfiltration | ⭐⭐⭐⭐⭐ | ✅ |
-| **Investigation 15** | **Credential Dumping, PsExec Lateral Movement & Finance Data Exfiltration** | ⭐⭐⭐⭐⭐⭐ | ✅ |
+| Investigation 15 | Credential Dumping, PsExec Lateral Movement & Finance Data Exfiltration | ⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 16** | **Enterprise Ransomware Outbreak, SMB Propagation & Multi-Host Encryption** | ⭐⭐⭐⭐⭐⭐ | ✅ |
 
 ---
 
 # 📊 Portfolio Progress
 
 ```
-███████████████░░░░░░░░░░░░░░░ 15 / 40 Investigations Completed
+████████████████░░░░░░░░░░░░░░
+
+16 / 40 Investigations Completed
+40% Complete
 ```
 
-🎯 **Goal:** Complete **40 enterprise-grade SOC investigations** covering Windows, Active Directory, Cloud Security, Malware Analysis, Threat Hunting, Detection Engineering, Digital Forensics, and Incident Response.
+🎯 **Goal:** Build a portfolio of **40 enterprise-grade SOC investigations** covering Windows, Active Directory, Cloud Security, Threat Hunting, Malware Analysis, Detection Engineering, Digital Forensics, and Incident Response.
 
 ---
 
@@ -108,14 +131,7 @@ This portfolio demonstrates practical experience in:
 
 - MITRE ATT&CK
 - Cyber Kill Chain
-
-## Investigation Areas
-
-- Threat Hunting
-- IOC Analysis
-- Malware Investigation
-- Incident Response
-- Digital Forensics
+- Incident Response Lifecycle
 
 ---
 
@@ -140,7 +156,10 @@ MITRE ATT&CK Mapping
 Attack Timeline Reconstruction
       │
       ▼
-Incident Report
+Incident Response
+      │
+      ▼
+Lessons Learned
 ```
 
 ---
@@ -150,20 +169,16 @@ Incident Report
 ## Windows Security
 
 - Failed Logons
-- Brute Force Attacks
+- Brute Force Detection
 - Privilege Escalation
 - PowerShell Abuse
 - Malware Execution
 - Registry Persistence
 - Scheduled Tasks
 - Credential Dumping
-- LSASS Memory Access
-- PsExec Lateral Movement
+- LSASS Memory Analysis
 - Windows Service Creation
-- Data Staging
-- Archive Creation
-- Data Exfiltration
-- Command & Control
+- Event Log Clearing
 - Anti-Forensics
 
 ---
@@ -172,9 +187,11 @@ Incident Report
 
 - Domain Enumeration
 - Domain Controller Discovery
-- Domain Admin Enumeration
-- Privileged Account Abuse
+- Domain Admin Discovery
 - SMB ADMIN$ Share Abuse
+- PsExec Lateral Movement
+- Remote Service Execution
+- Enterprise Server Compromise
 
 ---
 
@@ -182,8 +199,8 @@ Incident Report
 
 - Azure Account Compromise
 - Azure CLI Abuse
-- Azure Active Directory Investigation
-- Azure Storage Enumeration
+- Azure Active Directory Enumeration
+- Azure Storage Investigation
 - Cloud Persistence
 - Cloud Data Exfiltration
 - Rclone Investigation
@@ -195,22 +212,25 @@ Incident Report
 - Spear Phishing
 - Macro-enabled Office Documents
 - VBA Macro Execution
-- PowerShell Abuse
 - MSHTA Abuse
 - Payload Delivery
 - Command & Control Beaconing
 
 ---
 
-## Lateral Movement
+## Enterprise Ransomware
 
-- Credential Dumping
-- LSASS Memory Dump
-- ProcDump Abuse
-- Mimikatz Detection
-- PsExec Execution
-- Remote Service Creation (7045)
-- Finance Server Compromise
+- Enterprise Reconnaissance
+- Multi-Host Propagation
+- SMB Lateral Movement
+- PsExec Deployment
+- Shadow Copy Deletion
+- Recovery Environment Modification
+- Backup Service Termination
+- Enterprise File Encryption
+- Ransom Note Deployment
+- Recovery Prevention
+- Multi-Host Anti-Forensics
 
 ---
 
@@ -228,11 +248,15 @@ Incident Report
 - T1021.002 – SMB/Windows Admin Shares
 - T1563.002 – Remote Service Session
 - T1569.002 – Service Execution
+- T1486 – Data Encrypted for Impact
+- T1490 – Inhibit System Recovery
+- T1489 – Service Stop
+- T1491 – Defacement / Ransom Note
 - T1083 – File & Directory Discovery
 - T1005 – Data from Local System
 - T1074.001 – Local Data Staging
 - T1560.001 – Archive Collected Data
-- T1071 – Application Layer Protocol (C2)
+- T1071 – Application Layer Protocol
 - T1048 – Exfiltration Over Alternative Protocol
 - T1070.004 – File Deletion
 - T1070.001 – Clear Windows Event Logs
@@ -243,21 +267,22 @@ Incident Report
 
 | Category | Count |
 |----------|------:|
-| Total Investigations | **15** |
-| Windows Investigations | **14** |
-| Active Directory Investigations | **2** |
+| Total Investigations | **16** |
+| Windows Investigations | **15** |
+| Active Directory Investigations | **3** |
 | Cloud Investigations | **1** |
 | Phishing Investigations | **1** |
 | Credential Dumping Investigations | **1** |
-| MITRE ATT&CK Techniques | **25+** |
-| IOC Reports | **15** |
-| Incident Reports | **15** |
+| Enterprise Ransomware Investigations | **1** |
+| MITRE ATT&CK Techniques Practiced | **30+** |
+| IOC Reports | **16** |
+| Incident Reports | **16** |
 
 ---
 
 # 🎯 Current Learning
 
-I am continuously improving my practical cybersecurity skills through hands-on labs, realistic attack simulations, and SOC investigations involving:
+I am continuously improving my practical cybersecurity skills through enterprise attack simulations, hands-on investigations, and Blue Team labs involving:
 
 - Splunk Enterprise
 - Wazuh SIEM
@@ -271,6 +296,7 @@ I am continuously improving my practical cybersecurity skills through hands-on l
 - Digital Forensics
 - Incident Response
 - MITRE ATT&CK Framework
+- Endpoint Detection & Response (EDR)
 
 ---
 
@@ -278,40 +304,42 @@ I am continuously improving my practical cybersecurity skills through hands-on l
 
 ## Hansal Savaliya
 
-**Aspiring SOC Analyst | Threat Hunter | Blue Team | Cloud Security Enthusiast**
+**Aspiring SOC Analyst | Threat Hunter | Blue Team | Detection Engineering Enthusiast**
 
-I enjoy investigating real-world attack scenarios, understanding attacker techniques, and continuously improving my defensive cybersecurity skills through practical investigations and enterprise-focused labs.
+I'm building a practical cybersecurity portfolio by investigating realistic enterprise attack scenarios. My focus is understanding attacker behavior, improving defensive detection capabilities, and documenting investigations in a structured, professional format.
 
 ---
 
 # ⭐ Repository Goal
 
-This repository documents my journey toward becoming a professional SOC Analyst by building practical investigation experience rather than relying only on theory.
+This repository documents my journey toward becoming a professional SOC Analyst through practical, enterprise-focused investigations rather than theory alone.
 
-Each investigation includes:
+Every investigation contains:
 
-- ✅ Splunk Queries
+- ✅ Splunk Search Queries
 - ✅ Event Analysis
 - ✅ IOC Identification
 - ✅ MITRE ATT&CK Mapping
 - ✅ Attack Timeline
-- ✅ Incident Report
+- ✅ Incident Response Summary
 - ✅ Professional Documentation
 
 ---
 
 # 🚀 Current Progress
 
-## ✅ 15 / 40 Enterprise SOC Investigations Completed (37.5%)
+## ✅ 16 / 40 Enterprise SOC Investigations Completed
 
-### Upcoming Milestones
+**Portfolio Completion:** **40%**
 
-- Investigation 16 – Enterprise Ransomware Deployment
-- Investigation 17 – Active Directory Privilege Escalation
-- Investigation 18 – Kerberoasting Detection
-- Investigation 19 – Golden Ticket Attack
-- Investigation 20 – Enterprise Threat Hunting Challenge
+### Upcoming Roadmap
+
+- 🔹 Investigation 17 – Active Directory Privilege Escalation
+- 🔹 Investigation 18 – Kerberoasting Detection
+- 🔹 Investigation 19 – Golden Ticket Attack
+- 🔹 Investigation 20 – Enterprise Threat Hunting Challenge
+- 🔹 Investigations 21–40 – Advanced SOC, Detection Engineering & Incident Response Scenarios
 
 ---
 
-⭐ **This repository reflects my continuous journey toward becoming a SOC Analyst through practical investigations, real-world attack simulations, and professional incident response documentation.**
+⭐ **This repository represents my continuous journey toward becoming a SOC Analyst through practical investigations, enterprise attack simulations, and professional incident response documentation.**
