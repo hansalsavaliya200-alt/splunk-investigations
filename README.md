@@ -3,7 +3,7 @@
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-green)
 ![SOC](https://img.shields.io/badge/Blue%20Team-SOC%20Analyst-blue)
 ![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-red)
-![Status](https://img.shields.io/badge/Investigations-18-success)
+![Status](https://img.shields.io/badge/Investigations-20-success)
 
 ---
 
@@ -100,20 +100,20 @@ Each investigation contains:
 | Investigation 15 | Credential Dumping, PsExec Lateral Movement & Finance Data Exfiltration | ⭐⭐⭐⭐⭐⭐ | ✅ |
 | Investigation 16 | Enterprise Ransomware Outbreak, SMB Propagation & Multi-Host Encryption | ⭐⭐⭐⭐⭐⭐ | ✅ |
 | Investigation 17 | Active Directory DCSync Attack & Password Hash Exfiltration | ⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| **Investigation 18** | **Active Directory Kerberoasting Attack & Service Account Credential Theft** | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-
+| Investigation 18 | Active Directory Kerberoasting Attack & Service Account Credential Theft | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 19** | **Active Directory Golden Ticket Attack & Domain-Wide Kerberos Persistence** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 20** | **Active Directory Silver Ticket Attack & CIFS Service Credential Abuse** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 ---
 
 # 📊 Portfolio Progress
 
-```
-██████████████████░░░░░░░░░░░░
+████████████████████░░░░░░░░░░
 
-18 / 40 Investigations Completed
-45% Complete
-```
+20 / 40 Investigations Completed
+50% Complete
 
-🎯 **Goal:** Build a professional portfolio of **40 enterprise-grade SOC investigations** covering Windows Security, Active Directory, Cloud Security, Threat Hunting, Detection Engineering, Malware Analysis, Digital Forensics, and Incident Response.
+🎯 Goal: Build a professional portfolio of 40 enterprise-grade SOC investigations covering Windows Security, Active Directory, Cloud Security, Threat Hunting, Detection Engineering, Malware Analysis, Digital Forensics, and Incident Response.
+
 
 ---
 
@@ -200,6 +200,9 @@ Lessons Learned
 - Directory Service Access
 - DCSync Attack Detection
 - Kerberoasting Detection
+- Kerberos Investigation
+- Golden Ticket Detection
+- Silver Ticket Detection
 - Kerberos Ticket Analysis
 - Service Principal Name (SPN) Enumeration
 - Password Hash Theft
@@ -274,23 +277,24 @@ Lessons Learned
 - T1048 – Exfiltration Over Alternative Protocol
 - T1070.004 – File Deletion
 - T1070.001 – Clear Windows Event Logs
-
+- T1558.001 – Golden Ticket
+- T1558.002 – Silver Ticket
 ---
 
 # 📊 Portfolio Statistics
 
 | Category | Count |
 |----------|------:|
-| Total Investigations | **18** |
-| Windows Investigations | **17** |
-| Active Directory Investigations | **5** |
+| Total Investigations | **20** |
+| Windows Investigations | **19** |
+| Active Directory Investigations | **7** |
 | Cloud Investigations | **1** |
 | Phishing Investigations | **1** |
-| Credential Access Investigations | **3** |
+| Credential Access Investigations | **5** |
 | Enterprise Ransomware Investigations | **1** |
-| MITRE ATT&CK Techniques Practiced | **40+** |
-| IOC Reports | **18** |
-| Incident Reports | **18** |
+| MITRE ATT&CK Techniques Practiced | **45+** |
+| IOC Reports | **20** |
+| Incident Reports | **20** |
 
 ---
 
@@ -342,18 +346,18 @@ Every investigation includes:
 
 # 🚀 Current Progress
 
-## ✅ 18 / 40 Enterprise SOC Investigations Completed
+## ✅ 20 / 40 Enterprise SOC Investigations Completed
 
-**Portfolio Completion:** **45%**
+**Portfolio Completion:** **50%**
 
 ### Upcoming Roadmap
 
-- 🔹 Investigation 19 – Golden Ticket Attack
-- 🔹 Investigation 20 – Silver Ticket Attack
 - 🔹 Investigation 21 – Pass-the-Hash Attack
 - 🔹 Investigation 22 – Pass-the-Ticket Attack
 - 🔹 Investigation 23 – Enterprise Threat Hunting Challenge
-- 🔹 Investigations 24–40 – Advanced SOC, Detection Engineering, Malware Analysis & Enterprise Incident Response
+- 🔹 Investigation 24 – Active Directory Persistence
+- 🔹 Investigation 25 – Ransomware Recovery Investigation
+- 🔹 Investigations 26–40 – Advanced SOC, Detection Engineering, Malware Analysis & Enterprise Incident Response
 
 ---
 
