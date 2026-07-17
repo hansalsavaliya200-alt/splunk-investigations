@@ -3,7 +3,7 @@
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-green)
 ![SOC](https://img.shields.io/badge/Blue%20Team-SOC%20Analyst-blue)
 ![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-red)
-![Status](https://img.shields.io/badge/Investigations-20-success)
+![Status](https://img.shields.io/badge/Investigations-21-success)
 
 ---
 
@@ -103,15 +103,15 @@ Each investigation contains:
 | Investigation 18 | Active Directory Kerberoasting Attack & Service Account Credential Theft | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | **Investigation 19** | **Active Directory Golden Ticket Attack & Domain-Wide Kerberos Persistence** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | **Investigation 20** | **Active Directory Silver Ticket Attack & CIFS Service Credential Abuse** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 21** | **Pass-the-Hash Attack & Privilege Escalation Mitigation** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 ---
 
 # 📊 Portfolio Progress
 
-████████████████████░░░░░░░░░░
+█████████████████████░░░░░░░░░
 
-20 / 40 Investigations Completed
-50% Complete
-
+21 / 40 Investigations Completed
+52% Complete
 🎯 Goal: Build a professional portfolio of 40 enterprise-grade SOC investigations covering Windows Security, Active Directory, Cloud Security, Threat Hunting, Detection Engineering, Malware Analysis, Digital Forensics, and Incident Response.
 
 
@@ -285,16 +285,16 @@ Lessons Learned
 
 | Category | Count |
 |----------|------:|
-| Total Investigations | **20** |
-| Windows Investigations | **19** |
-| Active Directory Investigations | **7** |
+| Total Investigations | **21** |
+| Windows Investigations | **20** |
+| Active Directory Investigations | **8** |
 | Cloud Investigations | **1** |
 | Phishing Investigations | **1** |
-| Credential Access Investigations | **5** |
+| Credential Access Investigations | **6** |
 | Enterprise Ransomware Investigations | **1** |
-| MITRE ATT&CK Techniques Practiced | **45+** |
-| IOC Reports | **20** |
-| Incident Reports | **20** |
+| MITRE ATT&CK Techniques Practiced | **46+** |
+| IOC Reports | **21** |
+| Incident Reports | **21** |
 
 ---
 
@@ -346,19 +346,17 @@ Every investigation includes:
 
 # 🚀 Current Progress
 
-## ✅ 20 / 40 Enterprise SOC Investigations Completed
+## ✅ 21 / 40 Enterprise SOC Investigations Completed
 
-**Portfolio Completion:** **50%**
+**Portfolio Completion:** **52%**
 
 ### Upcoming Roadmap
 
-- 🔹 Investigation 21 – Pass-the-Hash Attack
 - 🔹 Investigation 22 – Pass-the-Ticket Attack
 - 🔹 Investigation 23 – Enterprise Threat Hunting Challenge
 - 🔹 Investigation 24 – Active Directory Persistence
 - 🔹 Investigation 25 – Ransomware Recovery Investigation
 - 🔹 Investigations 26–40 – Advanced SOC, Detection Engineering, Malware Analysis & Enterprise Incident Response
-
 ---
 
 ⭐ **This repository represents my continuous journey toward becoming a SOC Analyst through practical investigations, enterprise attack simulations, and professional incident response documentation.**
