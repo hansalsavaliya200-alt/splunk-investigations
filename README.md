@@ -105,14 +105,15 @@ Each investigation contains:
 | **Investigation 20** | **Active Directory Silver Ticket Attack & CIFS Service Credential Abuse** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | **Investigation 21** | **Pass-the-Hash Attack & Privilege Escalation Mitigation** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | **Investigation 22** | **Active Directory Pass-the-Ticket Attack & Kerberos TGS Abuse** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 23** | Enterprise Threat Hunting Challenge: Phishing to Domain Compromise | ⭐⭐⭐⭐⭐ | ✅ |
 ---
 
 # 📊 Portfolio Progress
 
-██████████████████████░░░░░░░░
+███████████████████████░░░░░░░
 
-22 / 40 Investigations Completed
-55% Complete
+23 / 40 Investigations Completed
+57% Complete
 🎯 Goal: Build a professional portfolio of 40 enterprise-grade SOC investigations covering Windows Security, Active Directory, Cloud Security, Threat Hunting, Detection Engineering, Malware Analysis, Digital Forensics, and Incident Response.
 
 
@@ -285,18 +286,17 @@ Lessons Learned
 # 📊 Portfolio Statistics
 
 | Category | Count |
-|----------|------:|
-| Total Investigations | **22** |
-| Windows Investigations | **21** |
-| Active Directory Investigations | **9** |
-| Cloud Investigations | **1** |
-| Phishing Investigations | **1** |
-| Credential Access Investigations | **7** |
-| Enterprise Ransomware Investigations | **1** |
-| MITRE ATT&CK Techniques Practiced | **47+** |
-| IOC Reports | **22** |
-| Incident Reports | **22** |
-
+| :--- | ---: |
+| **Total Investigations** | **23** |
+| **Windows Event Log Investigations** | **22** |
+| **Active Directory Infrastructure Investigations** | **10** |
+| **Credential Access & Abuse Investigations** | **8** |
+| **Cloud Infrastructure Investigations** | **1** |
+| **Phishing & Initial Access Investigations** | **2** |
+| **Enterprise Ransomware Tracker Labs** | **1** |
+| **MITRE ATT&CK Techniques Modeled** | **55+** |
+| **Indicators of Compromise (IOC) Reports** | **23** |
+| **Incident Response Action Playbooks** | **23** |
 ---
 
 # 🎯 Current Learning
@@ -345,17 +345,21 @@ Every investigation includes:
 
 ---
 
-# 🚀 Current Progress
+# 🚀 Current Roadmap & Objectives
 
-## ✅ 22 / 40 Enterprise SOC Investigations Completed
+## ✅ 23 / 40 Enterprise SOC Investigations Completed
 
-**Portfolio Completion:** **55%**
+### Upcoming Active Milestones:
+- 🔹 **Investigation 24** – Active Directory Domain Persistence Strategies
+- 🔹 **Investigation 25** – Enterprise Ransomware Triage & Recovery Analysis
+- 🔹 **Investigations 26–40** – Advanced Detection Engineering, Automated Playbook Design (SOAR), Malware Behavioral Analysis, and Complex Enterprise Incident Response Scenarios.
 
-### Upcoming Roadmap
+---
 
-- 🔹 Investigation 23 – Enterprise Threat Hunting Challenge
-- 🔹 Investigation 24 – Active Directory Persistence
-- 🔹 Investigation 25 – Ransomware Recovery Investigation
-- 🔹 Investigations 26–40 – Advanced SOC, Detection Engineering, Malware Analysis & Enterprise Incident Response
+## 🛠️ Technology Stack & Competencies
+- **SIEM / Data Analytics:** Splunk Enterprise, Splunk Search Processing Language (SPL)
+- **Log Source Specializations:** Windows Event Logs (Security, System, Application, Sysmon), Windows Filtering Platform (WFP), AWS CloudTrail, Web Server Access Daemons
+- **Framework Mappings:** MITRE ATT&CK, Cyber Kill Chain, NIST SP 800-61 r2
+- **Core Security Focus:** Threat Hunting, Detection Engineering, Incident Triage, Log Forensic Architecture
 
 ⭐ **This repository represents my continuous journey toward becoming a SOC Analyst through practical investigations, enterprise attack simulations, and professional incident response documentation.**
