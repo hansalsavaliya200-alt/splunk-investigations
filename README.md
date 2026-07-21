@@ -106,14 +106,15 @@ Each investigation contains:
 | **Investigation 21** | **Pass-the-Hash Attack & Privilege Escalation Mitigation** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | **Investigation 22** | **Active Directory Pass-the-Ticket Attack & Kerberos TGS Abuse** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | **Investigation 23** | Enterprise Threat Hunting Challenge: Phishing to Domain Compromise | ⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 24** | Active Directory Persistence Mechanisms & Log Wiping | ⭐⭐⭐⭐ | ✅ |
 ---
 
 # 📊 Portfolio Progress
 
 ███████████████████████░░░░░░░
 
-23 / 40 Investigations Completed
-57% Complete
+24 / 40 Investigations Completed
+60% Complete
 🎯 Goal: Build a professional portfolio of 40 enterprise-grade SOC investigations covering Windows Security, Active Directory, Cloud Security, Threat Hunting, Detection Engineering, Malware Analysis, Digital Forensics, and Incident Response.
 
 
@@ -287,16 +288,16 @@ Lessons Learned
 
 | Category | Count |
 | :--- | ---: |
-| **Total Investigations** | **23** |
-| **Windows Event Log Investigations** | **22** |
-| **Active Directory Infrastructure Investigations** | **10** |
+| **Total Investigations** | **24** |
+| **Windows Event Log Investigations** | **23** |
+| **Active Directory Infrastructure Investigations** | **11** |
 | **Credential Access & Abuse Investigations** | **8** |
+| **Persistence & Evasion Labs** | **7** |
 | **Cloud Infrastructure Investigations** | **1** |
 | **Phishing & Initial Access Investigations** | **2** |
-| **Enterprise Ransomware Tracker Labs** | **1** |
-| **MITRE ATT&CK Techniques Modeled** | **55+** |
-| **Indicators of Compromise (IOC) Reports** | **23** |
-| **Incident Response Action Playbooks** | **23** |
+| **MITRE ATT&CK Techniques Modeled** | **60+** |
+| **Indicators of Compromise (IOC) Reports** | **24** |
+| **Incident Response Action Playbooks** | **24** |
 ---
 
 # 🎯 Current Learning
@@ -350,9 +351,8 @@ Every investigation includes:
 ## ✅ 23 / 40 Enterprise SOC Investigations Completed
 
 ### Upcoming Active Milestones:
-- 🔹 **Investigation 24** – Active Directory Domain Persistence Strategies
 - 🔹 **Investigation 25** – Enterprise Ransomware Triage & Recovery Analysis
-- 🔹 **Investigations 26–40** – Advanced Detection Engineering, Automated Playbook Design (SOAR), Malware Behavioral Analysis, and Complex Enterprise Incident Response Scenarios.
+- 🔹 **Investigations 26–40** – Advanced Detection Engineering, SOAR Playbook Design, Threat Intelligence Correlation, and Complex Multi-Stage Enterprise Scenarios.
 
 ---
 
