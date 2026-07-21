@@ -3,7 +3,7 @@
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-green)
 ![SOC](https://img.shields.io/badge/Blue%20Team-SOC%20Analyst-blue)
 ![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-red)
-![Status](https://img.shields.io/badge/Investigations-25-success)
+![Status](https://img.shields.io/badge/Investigations-26-success)
 
 ---
 
@@ -101,21 +101,22 @@ Each investigation contains:
 | Investigation 16 | Enterprise Ransomware Outbreak, SMB Propagation & Multi-Host Encryption | ⭐⭐⭐⭐⭐⭐ | ✅ |
 | Investigation 17 | Active Directory DCSync Attack & Password Hash Exfiltration | ⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | Investigation 18 | Active Directory Kerberoasting Attack & Service Account Credential Theft | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| Investigation 19 | Active Directory Golden Ticket Attack | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| Investigation 20 | Active Directory Silver Ticket Attack | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| Investigation 21 | Pass-the-Hash Attack Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| Investigation 22 | Pass-the-Ticket Attack Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| Investigation 23 | Enterprise Threat Hunting Challenge | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⏳ |
-| Investigation 24 | Active Directory Persistence Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⏳ |
-| Investigation 25 | Ransomware Recovery Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 19** | **Golden Ticket Attack Investigation** | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 20** | **Silver Ticket Attack Investigation** | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 21** | **Pass-the-Hash Attack Investigation** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 22** | **Pass-the-Ticket Attack Investigation** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 23** | **Enterprise Threat Hunting Challenge** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 24** | **Active Directory Persistence Investigation** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 25** | **Ransomware Recovery Investigation** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **Investigation 26** | **EDR Lateral Movement Investigation** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 ---
 
 # 📊 Portfolio Progress
 
-█████████████████████████░░░░░░░░░░░░░░░
+██████████████████████████░░░░░░░░░░░░
 
-25 / 40 Investigations Completed
-62.5% Complete
+26 / 40 Investigations Completed
+65% Complete
 🎯 Goal: Build a professional portfolio of 40 enterprise-grade SOC investigations covering Windows Security, Active Directory, Cloud Security, Threat Hunting, Detection Engineering, Malware Analysis, Digital Forensics, and Incident Response.
 
 
@@ -291,6 +292,21 @@ Lessons Learned
 - T1070.004 – File Deletion
 - T1005 – Data from Local System
 - T1105 – Ingress Tool Transfer
+- T1218.011 – Rundll32
+- T1550.002 – Pass the Hash
+- T1550.003 – Pass the Ticket
+- T1558.001 – Golden Ticket
+- T1558.002 – Silver Ticket
+- T1136.001 – Local Account Persistence
+- T1547 – Boot or Logon Autostart Execution
+- T1543.003 – Windows Service Persistence
+- T1053.005 – Scheduled Task
+- T1112 – Registry Modification
+- T1021.002 – SMB Remote Services
+- T1047 – Windows Management Instrumentation
+- T1074.001 – Data Staging
+- T1560.001 – Archive Collected Data
+- T1567 – Exfiltration Over Web Services
 ---
 
 # 📊 Portfolio Statistics
@@ -356,20 +372,27 @@ Every investigation includes:
 
 ---
 
-## ✅ 25 / 40 Enterprise SOC Investigations Completed
+## ✅ 26 / 40 Enterprise SOC Investigations Completed
 
-Portfolio Completion: 62.5%
-- ✅ Investigation 19 – Golden Ticket Attack
-- ✅ Investigation 20 – Silver Ticket Attack
-- ✅ Investigation 21 – Pass-the-Hash Attack
-- ✅ Investigation 22 – Pass-the-Ticket Attack
-- ✅ Investigation 23 – Enterprise Threat Hunting Challenge
-- ✅ Investigation 24 – Active Directory Persistence
-- ✅ Investigation 25 – Ransomware Recovery Investigation
-- ⏳ Investigation 26 – Enterprise Log Correlation Investigation
-- ⏳ Investigation 27 – Insider Threat Investigation
-- ⏳ Investigation 28 – Advanced Malware Investigation
-- ⏳ Investigations 29–40 – Detection Engineering, Threat Hunting, Cloud Security, Digital Forensics & Incident Response
+**Portfolio Completion:** **65%**
+
+
+### Upcoming Roadmap
+
+- 📂 Investigation 27 – Cloud Data Exfiltration Threat Hunting (Dataset Ready)
+- 📂 Investigation 28 – EDR Multi-Stage Intrusion Investigation (Dataset Ready)
+- 🔹 Investigation 29 – Active Directory Trust Abuse
+- 🔹 Investigation 30 – Domain Controller Persistence
+- 🔹 Investigation 31 – Azure Identity Compromise
+- 🔹 Investigation 32 – Microsoft Defender Investigation
+- 🔹 Investigation 33 – Business Email Compromise (BEC)
+- 🔹 Investigation 34 – Malware Reverse Engineering
+- 🔹 Investigation 35 – Threat Intelligence Investigation
+- 🔹 Investigation 36 – DNS Tunneling Detection
+- 🔹 Investigation 37 – Living Off The Land (LOLBins)
+- 🔹 Investigation 38 – Detection Engineering Challenge
+- 🔹 Investigation 39 – Purple Team Simulation
+- 🔹 Investigation 40 – Enterprise SOC Capstone Investigation
 ---
 
 ## 🛠️ Technology Stack & Competencies
