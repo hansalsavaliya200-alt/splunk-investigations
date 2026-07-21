@@ -3,7 +3,7 @@
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-green)
 ![SOC](https://img.shields.io/badge/Blue%20Team-SOC%20Analyst-blue)
 ![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-red)
-![Status](https://img.shields.io/badge/Investigations-24-success)
+![Status](https://img.shields.io/badge/Investigations-25-success)
 
 ---
 
@@ -101,20 +101,21 @@ Each investigation contains:
 | Investigation 16 | Enterprise Ransomware Outbreak, SMB Propagation & Multi-Host Encryption | ⭐⭐⭐⭐⭐⭐ | ✅ |
 | Investigation 17 | Active Directory DCSync Attack & Password Hash Exfiltration | ⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | Investigation 18 | Active Directory Kerberoasting Attack & Service Account Credential Theft | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| **Investigation 19** | **Active Directory Golden Ticket Attack & Domain-Wide Kerberos Persistence** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| **Investigation 20** | **Active Directory Silver Ticket Attack & CIFS Service Credential Abuse** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| **Investigation 21** | **Pass-the-Hash Attack & Privilege Escalation Mitigation** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| **Investigation 22** | **Active Directory Pass-the-Ticket Attack & Kerberos TGS Abuse** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| **Investigation 23** | Enterprise Threat Hunting Challenge: Phishing to Domain Compromise | ⭐⭐⭐⭐⭐ | ✅ |
-| **Investigation 24** | Active Directory Persistence Mechanisms & Log Wiping | ⭐⭐⭐⭐ | ✅ |
+| Investigation 19 | Active Directory Golden Ticket Attack | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| Investigation 20 | Active Directory Silver Ticket Attack | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| Investigation 21 | Pass-the-Hash Attack Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| Investigation 22 | Pass-the-Ticket Attack Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| Investigation 23 | Enterprise Threat Hunting Challenge | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⏳ |
+| Investigation 24 | Active Directory Persistence Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ⏳ |
+| Investigation 25 | Ransomware Recovery Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 ---
 
 # 📊 Portfolio Progress
 
-███████████████████████░░░░░░░
+█████████████████████████░░░░░░░░░░░░░░░
 
-24 / 40 Investigations Completed
-60% Complete
+25 / 40 Investigations Completed
+62.5% Complete
 🎯 Goal: Build a professional portfolio of 40 enterprise-grade SOC investigations covering Windows Security, Active Directory, Cloud Security, Threat Hunting, Detection Engineering, Malware Analysis, Digital Forensics, and Incident Response.
 
 
@@ -282,22 +283,31 @@ Lessons Learned
 - T1070.001 – Clear Windows Event Logs
 - T1558.001 – Golden Ticket
 - T1558.002 – Silver Ticket
+- T1490 – Inhibit System Recovery
+- T1070.001 – Clear Windows Event Logs
+- T1486 – Data Encrypted for Impact
+- T1489 – Service Stop
+- T1560.001 – Archive Collected Data
+- T1070.004 – File Deletion
+- T1005 – Data from Local System
+- T1105 – Ingress Tool Transfer
 ---
 
 # 📊 Portfolio Statistics
 
 | Category | Count |
-| :--- | ---: |
-| **Total Investigations** | **24** |
-| **Windows Event Log Investigations** | **23** |
-| **Active Directory Infrastructure Investigations** | **11** |
-| **Credential Access & Abuse Investigations** | **8** |
-| **Persistence & Evasion Labs** | **7** |
-| **Cloud Infrastructure Investigations** | **1** |
-| **Phishing & Initial Access Investigations** | **2** |
-| **MITRE ATT&CK Techniques Modeled** | **60+** |
-| **Indicators of Compromise (IOC) Reports** | **24** |
-| **Incident Response Action Playbooks** | **24** |
+|----------|------:|
+| Total Investigations | **25** |
+| Windows Investigations | **20** |
+| Active Directory Investigations | **8** |
+| Cloud Investigations | **1** |
+| Phishing Investigations | **1** |
+| Credential Access Investigations | **6** |
+| Enterprise Ransomware Investigations | **2** |
+| Threat Hunting Investigations | **1** |
+| MITRE ATT&CK Techniques Practiced | **65+** |
+| IOC Reports | **25** |
+| Incident Reports | **25** |
 ---
 
 # 🎯 Current Learning
@@ -346,14 +356,20 @@ Every investigation includes:
 
 ---
 
-# 🚀 Current Roadmap & Objectives
+## ✅ 25 / 40 Enterprise SOC Investigations Completed
 
-## ✅ 23 / 40 Enterprise SOC Investigations Completed
-
-### Upcoming Active Milestones:
-- 🔹 **Investigation 25** – Enterprise Ransomware Triage & Recovery Analysis
-- 🔹 **Investigations 26–40** – Advanced Detection Engineering, SOAR Playbook Design, Threat Intelligence Correlation, and Complex Multi-Stage Enterprise Scenarios.
-
+Portfolio Completion: 62.5%
+- ✅ Investigation 19 – Golden Ticket Attack
+- ✅ Investigation 20 – Silver Ticket Attack
+- ✅ Investigation 21 – Pass-the-Hash Attack
+- ✅ Investigation 22 – Pass-the-Ticket Attack
+- ✅ Investigation 23 – Enterprise Threat Hunting Challenge
+- ✅ Investigation 24 – Active Directory Persistence
+- ✅ Investigation 25 – Ransomware Recovery Investigation
+- ⏳ Investigation 26 – Enterprise Log Correlation Investigation
+- ⏳ Investigation 27 – Insider Threat Investigation
+- ⏳ Investigation 28 – Advanced Malware Investigation
+- ⏳ Investigations 29–40 – Detection Engineering, Threat Hunting, Cloud Security, Digital Forensics & Incident Response
 ---
 
 ## 🛠️ Technology Stack & Competencies
