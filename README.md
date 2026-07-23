@@ -7,15 +7,15 @@
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-00A651?style=for-the-badge&logo=splunk&logoColor=white)
 ![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-D93636?style=for-the-badge&logo=mitre&logoColor=white)
 ![Blue Team](https://img.shields.io/badge/Team-Blue%20Team-1E63C8?style=for-the-badge&logo=windowsdefender&logoColor=white)
-![Status](https://img.shields.io/badge/Investigations-27%2F40-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Investigations-28%2F40-success?style=for-the-badge)
 
-![Progress](https://img.shields.io/badge/Portfolio%20Completion-68%25-yellow?style=flat-square)
+![Progress](https://img.shields.io/badge/Portfolio%20Completion-70%25-yellow?style=flat-square)
 ![Windows](https://img.shields.io/badge/Focus-Windows%20Security-0078D6?style=flat-square&logo=windows&logoColor=white)
 ![Active Directory](https://img.shields.io/badge/Focus-Active%20Directory-00A4EF?style=flat-square&logo=microsoft&logoColor=white)
 ![Azure](https://img.shields.io/badge/Focus-Azure%20Cloud-0089D6?style=flat-square&logo=microsoftazure&logoColor=white)
 ![License](https://img.shields.io/badge/Docs-Educational%20Use-lightgrey?style=flat-square)
 
-*A hands-on, evidence-based SOC portfolio — 27 realistic enterprise attack investigations, fully documented from log to lesson learned.*
+*A hands-on, evidence-based SOC portfolio — 28 realistic enterprise attack investigations, fully documented from log to lesson learned.*
 
 </div>
 
@@ -66,7 +66,7 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 <td><b>🔍 SIEM & Threat Hunting</b></td>
 <td>
 
-`Splunk Enterprise` `Threat Hunting` `Detection Engineering` `IOC Identification` `Incident Investigation`
+`Splunk Enterprise` `Threat Hunting` `Detection Engineering` `IOC Identification` `Incident Investigation` `EDR Investigation`
 
 </td>
 </tr>
@@ -74,7 +74,7 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 <td><b>🪟 Windows Security</b></td>
 <td>
 
-`Windows Event Logs` `PowerShell Investigation` `Registry Persistence` `Scheduled Tasks` `Windows Services` `Anti-Forensics` `Event Log Analysis`
+`Windows Event Logs` `PowerShell Investigation` `Registry Persistence` `Scheduled Tasks` `Windows Services` `Anti-Forensics` `Event Log Analysis` `LOLBins Analysis`
 
 </td>
 </tr>
@@ -110,17 +110,17 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 
 ## 🌟 Featured Investigation
 
-> ### 🕵️ Investigation 27 — Enterprise Cloud Exfiltration Threat Hunt
-> **AD Recon → HR Data Collection → Cloud Upload (Rclone) → Log Clearing**
+> ### 🕵️ Investigation 28 — EDR Multi-Stage Intrusion Detection
+> **MSHTA → Encoded PowerShell → Rundll32 → C2 Beacon → WMIC → SMB Admin Share → RAR Archive → Curl Exfil → Log Wipe**
 >
 > | | |
 > |---|---|
-> | **Events Triaged** | 85 (only 8 High/Critical) |
+> | **Events Triaged** | 90 (only 10 High/Critical) |
 > | **Primary Actor** | Administrator account |
-> | **Key Techniques** | T1087 · T1069 · T1018 · T1560.001 · T1005 · **T1567.002** · T1070.001 |
-> | **Analyst Highlight** | Explicitly declined to conclude credential theft — the evidence only supported "multiple accounts active," not "attacker gained passwords." |
+> | **Key Techniques** | T1218.005 · T1059.001 · T1218.011 · T1071 · T1047 · T1021.002 · T1560.001 · T1041 · T1070.001 |
+> | **Analyst Highlight** | Actively searched for and ruled out Mimikatz, PsExec, and persistence — documenting the query used for each negative result, not just assuming their absence. |
 >
-> This investigation is the newest addition to the portfolio and best demonstrates analyst-level discipline: separating *confirmed fact* from *plausible assumption* under interview-style scrutiny.
+> A full living-off-the-land (LOLBins) intrusion using only pre-installed Windows utilities — no custom malware dropped — making it a strong showcase for detection reasoning over signature matching. The highest-severity investigation in the portfolio to date.
 
 <div align="right"><a href="#-splunk-soc-investigation-portfolio">↑ back to top</a></div>
 
@@ -185,7 +185,7 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 </details>
 
 <details open>
-<summary><b>⚫ Master Tier (⭐⭐⭐⭐⭐⭐⭐⭐⭐) — Ticket Attacks, Threat Hunting & Cloud Exfil</b></summary>
+<summary><b>⚫ Master Tier (⭐⭐⭐⭐⭐⭐⭐⭐⭐) — Ticket Attacks, Threat Hunting, Cloud & EDR</b></summary>
 <br>
 
 | # | Scenario | Difficulty | Status |
@@ -196,7 +196,8 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 | 24 | Active Directory Persistence Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | 25 | Ransomware Recovery Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | 26 | EDR Lateral Movement Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| **27** | **🌟 Enterprise Cloud Exfiltration Threat Hunt** | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| 27 | Enterprise Cloud Exfiltration Threat Hunt | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **28** | **🌟 EDR Multi-Stage Intrusion Detection** (MSHTA → C2 → SMB Lateral Move → Curl Exfil → Log Wipe) | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 
 </details>
 
@@ -207,7 +208,7 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 ## 📊 Portfolio Progress
 
 ```
-███████████████████████████░░░░░░░░░░░  27 / 40  ·  68%
+████████████████████████████░░░░░░░░░░  28 / 40  ·  70%
 ```
 
 <div align="center">
@@ -216,8 +217,8 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 |:-:|:-:|:-:|
 | Foundational Investigations | 1–10 | ✅ Complete |
 | Advanced / Domain Compromise | 11–20 | ✅ Complete |
-| Master Tier | 21–27 | ✅ Complete |
-| Cloud & Identity Expansion | 28–33 | 🔄 In Progress |
+| Master Tier | 21–28 | ✅ Complete |
+| Cloud & Identity Expansion | 29–33 | 🔄 In Progress |
 | Capstone & Purple Team | 34–40 | ⬜ Planned |
 
 </div>
@@ -290,7 +291,7 @@ Log Collection → Event Analysis → Threat Detection → IOC Identification
 - Failed Logons
 - Brute Force Attacks
 - Privilege Escalation
-- PowerShell Abuse
+- PowerShell Abuse (incl. encoded/obfuscated)
 - Malware Execution
 - Registry Persistence
 - Scheduled Tasks
@@ -299,6 +300,7 @@ Log Collection → Event Analysis → Threat Detection → IOC Identification
 - LSASS Memory Analysis
 - Event Log Clearing
 - Anti-Forensics
+- LOLBins Abuse (MSHTA, Rundll32, WMIC, Curl, Wevtutil)
 
 </td>
 <td valign="top">
@@ -390,8 +392,9 @@ Log Collection → Event Analysis → Threat Detection → IOC Identification
 | Archive Collected Data | T1560.001 |
 | Application Layer Protocol | T1071 |
 | Exfiltration Over Alternative Protocol | T1048 |
+| Exfiltration Over Web | T1041 |
 | Exfiltration Over Web Services | T1567 |
-| **Exfiltration to Cloud Storage** | **T1567.002** |
+| Exfiltration to Cloud Storage | T1567.002 |
 | File Deletion | T1070.004 |
 | Clear Windows Event Logs | T1070.001 |
 | Data Encrypted for Impact | T1486 |
@@ -411,18 +414,18 @@ Log Collection → Event Analysis → Threat Detection → IOC Identification
 
 | Category | Count |
 |---|:-:|
-| Total Investigations | **27** |
-| Windows Investigations | **20** |
+| Total Investigations | **28** |
+| Windows Investigations | **21** |
 | Active Directory Investigations | **8** |
 | Cloud Investigations | **2** |
 | Phishing Investigations | **1** |
 | Credential Access Investigations | **6** |
 | Enterprise Ransomware Investigations | **2** |
 | Threat Hunting Investigations | **2** |
-| Data Exfiltration Investigations | **4** |
+| Data Exfiltration Investigations | **5** |
 | MITRE ATT&CK Techniques Practiced | **40+** |
-| IOC Reports | **27** |
-| Incident Reports | **27** |
+| IOC Reports | **28** |
+| Incident Reports | **28** |
 
 </div>
 
@@ -471,7 +474,7 @@ This repository documents my journey toward becoming a professional SOC Analyst 
 
 <div align="center">
 
-### ✅ 27 / 40 Enterprise SOC Investigations Completed — 68%
+### ✅ 28 / 40 Enterprise SOC Investigations Completed — 70%
 
 </div>
 
@@ -479,7 +482,6 @@ This repository documents my journey toward becoming a professional SOC Analyst 
 
 | # | Investigation | Status |
 |:-:|---|:-:|
-| 28 | EDR Multi-Stage Intrusion Investigation | 📂 Dataset Ready |
 | 29 | Active Directory Trust Abuse | 🔹 Planned |
 | 30 | Domain Controller Persistence | 🔹 Planned |
 | 31 | Azure Identity Compromise | 🔹 Planned |
