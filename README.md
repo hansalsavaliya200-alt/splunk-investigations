@@ -7,15 +7,15 @@
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-00A651?style=for-the-badge&logo=splunk&logoColor=white)
 ![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-D93636?style=for-the-badge&logo=mitre&logoColor=white)
 ![Blue Team](https://img.shields.io/badge/Team-Blue%20Team-1E63C8?style=for-the-badge&logo=windowsdefender&logoColor=white)
-![Status](https://img.shields.io/badge/Investigations-28%2F40-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Investigations-29%2F40-success?style=for-the-badge)
 
-![Progress](https://img.shields.io/badge/Portfolio%20Completion-70%25-yellow?style=flat-square)
+![Progress](https://img.shields.io/badge/Portfolio%20Completion-73%25-yellow?style=flat-square)
 ![Windows](https://img.shields.io/badge/Focus-Windows%20Security-0078D6?style=flat-square&logo=windows&logoColor=white)
 ![Active Directory](https://img.shields.io/badge/Focus-Active%20Directory-00A4EF?style=flat-square&logo=microsoft&logoColor=white)
 ![Azure](https://img.shields.io/badge/Focus-Azure%20Cloud-0089D6?style=flat-square&logo=microsoftazure&logoColor=white)
 ![License](https://img.shields.io/badge/Docs-Educational%20Use-lightgrey?style=flat-square)
 
-*A hands-on, evidence-based SOC portfolio — 28 realistic enterprise attack investigations, fully documented from log to lesson learned.*
+*A hands-on, evidence-based SOC portfolio — 29 realistic enterprise attack investigations, fully documented from log to lesson learned.*
 
 </div>
 
@@ -82,7 +82,7 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 <td><b>🏢 Active Directory</b></td>
 <td>
 
-`Domain Enumeration` `DC Discovery` `Domain Admin Enumeration` `LSASS Dumping` `DCSync Detection` `Kerberoasting Detection` `SPN Enumeration` `PsExec Detection` `SMB Investigation`
+`Domain Enumeration` `DC Discovery` `Domain Admin Enumeration` `LSASS Dumping` `DCSync Detection` `Kerberoasting Detection` `SPN Enumeration` `PsExec Detection` `SMB Investigation` `Trust Relationship Abuse` `Pass-the-Ticket Detection`
 
 </td>
 </tr>
@@ -110,17 +110,17 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 
 ## 🌟 Featured Investigation
 
-> ### 🕵️ Investigation 28 — EDR Multi-Stage Intrusion Detection
-> **MSHTA → Encoded PowerShell → Rundll32 → C2 Beacon → WMIC → SMB Admin Share → RAR Archive → Curl Exfil → Log Wipe**
+> ### 🕵️ Investigation 29 — Active Directory Trust Abuse
+> **Trust Enumeration → Kerberos Ticket Theft (Rubeus/Mimikatz) → Pass-the-Ticket → Lateral Move to Trusted DC → Collection → Exfil → Log Wipe**
 >
 > | | |
 > |---|---|
-> | **Events Triaged** | 90 (only 10 High/Critical) |
-> | **Primary Actor** | Administrator account |
-> | **Key Techniques** | T1218.005 · T1059.001 · T1218.011 · T1071 · T1047 · T1021.002 · T1560.001 · T1041 · T1070.001 |
-> | **Analyst Highlight** | Actively searched for and ruled out Mimikatz, PsExec, and persistence — documenting the query used for each negative result, not just assuming their absence. |
+> | **Events Triaged** | 99 (20 High/Critical — the densest kill chain in the portfolio so far) |
+> | **Primary Actor** | Administrator (via forged/passed Kerberos ticket) |
+> | **Key Techniques** | T1482 · T1558 · T1003 · T1550.003 · T1021.002 · T1560 · T1567 · T1070.001 |
+> | **Analyst Highlight** | Resisted treating "administrator has the most events" as proof the native account was compromised from the start — the evidence shows Administrator-level access was *obtained* via a passed ticket mid-chain, not phished at the outset. |
 >
-> A full living-off-the-land (LOLBins) intrusion using only pre-installed Windows utilities — no custom malware dropped — making it a strong showcase for detection reasoning over signature matching. The highest-severity investigation in the portfolio to date.
+> A full cross-domain trust abuse scenario — trust key theft, forged inter-realm tickets, and lateral movement onto a trusted Domain Controller — reconstructed entirely from process-creation telemetry. The most Kerberos-heavy investigation in the portfolio to date.
 
 <div align="right"><a href="#-splunk-soc-investigation-portfolio">↑ back to top</a></div>
 
@@ -185,7 +185,7 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 </details>
 
 <details open>
-<summary><b>⚫ Master Tier (⭐⭐⭐⭐⭐⭐⭐⭐⭐) — Ticket Attacks, Threat Hunting, Cloud & EDR</b></summary>
+<summary><b>⚫ Master Tier (⭐⭐⭐⭐⭐⭐⭐⭐⭐) — Ticket Attacks, Threat Hunting, Cloud, EDR & Trust Abuse</b></summary>
 <br>
 
 | # | Scenario | Difficulty | Status |
@@ -197,7 +197,8 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 | 25 | Ransomware Recovery Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | 26 | EDR Lateral Movement Investigation | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 | 27 | Enterprise Cloud Exfiltration Threat Hunt | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
-| **28** | **🌟 EDR Multi-Stage Intrusion Detection** (MSHTA → C2 → SMB Lateral Move → Curl Exfil → Log Wipe) | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| 28 | EDR Multi-Stage Intrusion Detection | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
+| **29** | **🌟 Active Directory Trust Abuse** (Trust Enum → Rubeus/Mimikatz → Pass-the-Ticket → Trusted DC Compromise) | ⭐⭐⭐⭐⭐⭐⭐⭐⭐ | ✅ |
 
 </details>
 
@@ -208,7 +209,7 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 ## 📊 Portfolio Progress
 
 ```
-████████████████████████████░░░░░░░░░░  28 / 40  ·  70%
+█████████████████████████████░░░░░░░░░  29 / 40  ·  73%
 ```
 
 <div align="center">
@@ -217,8 +218,8 @@ Every investigation follows the same rigor an interviewer — or a real SOC — 
 |:-:|:-:|:-:|
 | Foundational Investigations | 1–10 | ✅ Complete |
 | Advanced / Domain Compromise | 11–20 | ✅ Complete |
-| Master Tier | 21–28 | ✅ Complete |
-| Cloud & Identity Expansion | 29–33 | 🔄 In Progress |
+| Master Tier | 21–29 | ✅ Complete |
+| Cloud & Identity Expansion | 30–33 | 🔄 In Progress |
 | Capstone & Purple Team | 34–40 | ⬜ Planned |
 
 </div>
@@ -317,6 +318,8 @@ Log Collection → Event Analysis → Threat Detection → IOC Identification
 - KRBTGT Investigation
 - SMB ADMIN$ Abuse
 - PsExec Lateral Movement
+- Domain Trust Enumeration & Abuse
+- Pass-the-Ticket Attacks (Rubeus)
 
 </td>
 </tr>
@@ -367,12 +370,15 @@ Log Collection → Event Analysis → Threat Detection → IOC Identification
 | Ingress Tool Transfer | T1105 |
 | Account Discovery | T1087 |
 | Domain Account Discovery | T1087.002 |
+| Domain Trust Discovery | T1482 |
 | Permission Groups Discovery | T1069 |
 | Network Configuration Discovery | T1016 |
 | Remote System Discovery | T1018 |
 | File & Directory Discovery | T1083 |
+| OS Credential Dumping | T1003 |
 | LSASS Credential Dumping | T1003.001 |
 | DCSync | T1003.006 |
+| Steal or Forge Kerberos Tickets | T1558 |
 | Kerberoasting | T1558.003 |
 | Golden Ticket | T1558.001 |
 | Silver Ticket | T1558.002 |
@@ -384,12 +390,14 @@ Log Collection → Event Analysis → Threat Detection → IOC Identification
 | Scheduled Task | T1053.005 |
 | Registry Modification | T1112 |
 | SMB / Windows Admin Shares | T1021.002 |
+| Remote Services | T1021 |
 | Remote Service Session | T1563.002 |
 | Service Execution | T1569.002 |
 | Windows Management Instrumentation | T1047 |
 | Data from Local System | T1005 |
 | Local Data Staging | T1074.001 |
-| Archive Collected Data | T1560.001 |
+| Archive Collected Data | T1560 |
+| Archive Collected Data (via Utility) | T1560.001 |
 | Application Layer Protocol | T1071 |
 | Exfiltration Over Alternative Protocol | T1048 |
 | Exfiltration Over Web | T1041 |
@@ -414,18 +422,18 @@ Log Collection → Event Analysis → Threat Detection → IOC Identification
 
 | Category | Count |
 |---|:-:|
-| Total Investigations | **28** |
+| Total Investigations | **29** |
 | Windows Investigations | **21** |
-| Active Directory Investigations | **8** |
+| Active Directory Investigations | **9** |
 | Cloud Investigations | **2** |
 | Phishing Investigations | **1** |
-| Credential Access Investigations | **6** |
+| Credential Access Investigations | **7** |
 | Enterprise Ransomware Investigations | **2** |
 | Threat Hunting Investigations | **2** |
-| Data Exfiltration Investigations | **5** |
-| MITRE ATT&CK Techniques Practiced | **40+** |
-| IOC Reports | **28** |
-| Incident Reports | **28** |
+| Data Exfiltration Investigations | **6** |
+| MITRE ATT&CK Techniques Practiced | **45+** |
+| IOC Reports | **29** |
+| Incident Reports | **29** |
 
 </div>
 
@@ -474,7 +482,7 @@ This repository documents my journey toward becoming a professional SOC Analyst 
 
 <div align="center">
 
-### ✅ 28 / 40 Enterprise SOC Investigations Completed — 70%
+### ✅ 29 / 40 Enterprise SOC Investigations Completed — 73%
 
 </div>
 
@@ -482,7 +490,6 @@ This repository documents my journey toward becoming a professional SOC Analyst 
 
 | # | Investigation | Status |
 |:-:|---|:-:|
-| 29 | Active Directory Trust Abuse | 🔹 Planned |
 | 30 | Domain Controller Persistence | 🔹 Planned |
 | 31 | Azure Identity Compromise | 🔹 Planned |
 | 32 | Microsoft Defender Investigation | 🔹 Planned |
