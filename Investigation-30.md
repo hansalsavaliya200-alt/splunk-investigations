@@ -1,8 +1,3 @@
-Here is a clean, well-formatted **`README.md`** tailored for your GitHub SOC Analyst portfolio repository. It follows the standard structure used by SOC/DFIR teams to document writeups, making it easy for recruiters and hiring managers to review your Splunk SPL skills, threat detection knowledge, and MITRE ATT&CK mapping.
-
----
-
-```markdown
 # Investigation 30: Domain Controller Persistence & Anti-Forensics
 
 ## 📌 Executive Summary
