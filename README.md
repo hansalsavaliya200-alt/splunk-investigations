@@ -7,7 +7,7 @@
 ![Splunk](https://img.shields.io/badge/SIEM-Splunk-00A651?style=for-the-badge&logo=splunk&logoColor=white)
 ![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-D93636?style=for-the-badge&logo=mitre&logoColor=white)
 ![Blue Team](https://img.shields.io/badge/Team-Blue%20Team-1E63C8?style=for-the-badge&logo=windowsdefender&logoColor=white)
-![Status](https://img.shields.io/badge/Investigations-29%2F40-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Investigations-33%2F40-success?style=for-the-badge)
 
 ![Progress](https://img.shields.io/badge/Portfolio%20Completion-73%25-yellow?style=flat-square)
 ![Windows](https://img.shields.io/badge/Focus-Windows%20Security-0078D6?style=flat-square&logo=windows&logoColor=white)
